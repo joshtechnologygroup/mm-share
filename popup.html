@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Share this at JTG</title>
+  </head>
+  <body>
+    <form id="input-form" hidden="true">
+      Selected Tab URL:<br>
+      <input type="text" id="mm-share-url" name="url" value="" readonly><br>
+      <br>
+      <textarea type="text" rows="5" cols="50" name="comment" placeholder="Comments(Optional)"></textarea><br><br>
+      <div align="center">Post on <b>Tech Buzz?</b></div><br>
+      <div align="center">
+        <input type="submit" value="Yes">
+        <input type="button" id="close-popup" value="No">
+      </div>
+    </form>
+    <form id="token-input-form" hidden="true">
+      Add Your JTG Mattermost Personal Access Tokens:<br>
+      <input type="text" name="token" value="" novalidate><br>
+      <div align="center">
+        <input type="submit" value="Submit">
+      </div>
+      Learn <b><a href="https://docs.mattermost.com/developer/personal-access-tokens.html#creating-a-personal-access-token" target="_blank"> How to generate Personal Access Tokens</a></b>.
+    </form>
+    <div id="initial-loader">
+      Loading...
+    </div>
+    <form id="token-expired" hidden="true">
+      It looks your access token is invalid or expried.
+      <input type="submit" value="OK">
+    </form>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

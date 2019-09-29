@@ -1,0 +1,34 @@
+{
+  "name": "Share for Mattermost",
+  "version": "1.0",
+  "description": "Post links to Mattermost with a single click!",
+  "permissions": [
+    "contextMenus",
+    "identity",
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "tabs"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/16.png",
+      "32": "images/32.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
+    }
+  },
+  "icons": {
+    "16": "images/16.png",
+    "32": "images/32.png",
+    "48": "images/48.png",
+    "128": "images/128.png"
+  },
+  "manifest_version": 2
+}
